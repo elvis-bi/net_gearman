@@ -335,7 +335,7 @@ class Connection
             $except = null;
             $read   = array($socket);
 
-            socket_select($read, $write, $except, $tv_sec, $tv_usec);
+            @socket_select($read, $write, $except, $tv_sec, $tv_usec);
             foreach ($read as $s) {
                 $cmds[] = self::read($s);
             }

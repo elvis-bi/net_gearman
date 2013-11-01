@@ -256,7 +256,7 @@ class Worker implements ServerSetting
                 }
 
                 $read = $this->connection;
-                socket_select($read, $write, $except, 60);
+                @socket_select($read, $write, $except, 60);
                 $idle = (count($read) == 0);
             }
 

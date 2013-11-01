@@ -398,7 +398,7 @@ class Client implements ServerSetting
             $write  = null;
             $except = null;
             $read   = $this->conn;
-            socket_select($read, $write, $except, $socket_timeout);
+            @socket_select($read, $write, $except, $socket_timeout);
             foreach ($read as $socket) {
                 $resp = Connection::read($socket);
                 if (count($resp)) {

@@ -1,5 +1,5 @@
 {
-    "name": "publero/net_gearman",
+    "name": "elvis-bi/net_gearman",
     "type": "library",
     "description": "Gearman (http://www.danga.com/gearman) is a system to farm out work to other machines. It can load balance function calls to lots of machines and allows you to call functions between languages. It can also run all function calls in parallel.",
     "license": "New BSD",
@@ -30,10 +30,5 @@
     },
     "autoload": {
         "psr-0": { "Net\\Gearman\\": "lib/" }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        }
     }
 }
